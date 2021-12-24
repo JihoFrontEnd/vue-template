@@ -1,0 +1,36 @@
+# For OSX Finder
+.DS_Store
+
+# Node
+node_modules
+
+# Artifacts
+/dist
+
+# Test
+coverage
+
+# Dot Environment
+.env.local
+.env.*.local
+
+# Log of Package Managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# For IntelliJ
+.idea
+
+# For VSCode
+.vscode/*
+!.vscode/*.code-snippets
+!.vscode/settings.json
+
+# Who are you?
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

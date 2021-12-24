@@ -1,0 +1,67 @@
+{
+  "console.log('')": {
+    "scope": "javascript,typescript,vue",
+    "prefix": "log",
+    "body": [
+      "console.log('$1');"
+    ],
+    "description": "어느 순간 console.log() 뒤에 줄바꿈이 삽입되는 현상이 나타났다."
+  },
+  "console.warn('')": {
+    "scope": "javascript,typescript,vue",
+    "prefix": "warn",
+    "body": [
+      "console.warn('$1');"
+    ],
+  },
+  "console.error('')": {
+    "scope": "javascript,typescript,vue",
+    "prefix": "error",
+    "body": [
+      "console.error('$1');"
+    ],
+  },
+  "Single File Component": {
+    "scope": "vue",
+    "prefix": "vue",
+    "body": [
+      "<script lang=\"ts\">",
+      "/**",
+      " * @Author jihogrammer@gmail.com",
+      " */",
+      "import { defineComponent } from 'vue';\n",
+      "export default defineComponent({",
+      "  name: '$1',",
+      "  setup() {",
+      "    $2",
+      "    return {};",
+      "  },",
+      "});",
+      "</script>\n",
+      "<template>",
+      "  $3",
+      "</template>\n",
+      "<style lang=\"scss\">",
+      "$4",
+      "</style>\n"
+    ],
+  },
+  "Vue SFC Setup": {
+    "scope": "vue",
+    "prefix": "vue",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "/**",
+      " * @Author jihogrammer@gmail.com",
+      " */",
+      "$1",
+      "</script>\n",
+      "<template>",
+      "  $2",
+      "</template>\n",
+      "<style lang=\"scss\">",
+      "$3",
+      "</style>\n"
+    ],
+  },
+}
